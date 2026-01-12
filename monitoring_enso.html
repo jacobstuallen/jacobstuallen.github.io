@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="El Niño Southern Oscillation (ENSO) monitoring and analysis">
-    <title>Jacob SA Climate | ENSO Monitoring</title>
+    <title>Jacob Stuivenvolt-Allen| ENSO Monitoring</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +14,8 @@
     <header class="site-header">
         <div class="header-container">
             <div class="site-branding">
-                <img src="images/swift.logo.1.png" alt="JSA Climate Logo" class="site-logo">
-                <h1 class="site-title">Jacob SA Climate</h1>
+                <img src="images/website.logo.transparent.png" alt="JSA Climate Logo" class="site-logo">
+                <h1 class="site-title">Jacob Stuivenvolt-Allen</h1>
             </div>
             
             <button class="menu-toggle" aria-label="Toggle menu">
@@ -33,9 +33,9 @@
                             <span class="dropdown-arrow">▼</span>
                         </a>
                         <div class="dropdown-menu">
-                            <a href="monitoring1.html">Global Fields</a>
-                            <a href="monitoring2.html">ENSO</a>
-                            <a href="monitoring3.html">Climate Change</a>
+                            <a href="monitoring_global.html">Global Fields</a>
+                            <a href="monitoring_enso.html">ENSO</a>
+                            <!--<a href="monitoring_change.html">Climate Change</a>-->
                         </div>
                     </li>
                     <li><a href="research.html">Research</a></li>
@@ -48,18 +48,38 @@
     <main class="main-content">
         <!-- Niño 3.4 Index Section -->
         <section class="content-section">
+
             <div class="section-header">
                 <h2 class="section-title">El Niño Southern Oscillation</h2>
                 <p class="section-subtitle">Current ENSO conditions and historical trends</p>
             </div>
-            
-            <div class="image-display">
-                <img src="figures/nino34.png" alt="Niño 3.4 Index" class="active">
-            </div>
-            
+
             <div class="text-description">
-                <p>The Niño 3.4 index tracks sea surface temperature anomalies in the equatorial Pacific Ocean. Values above +0.5°C indicate El Niño conditions, while values below -0.5°C indicate La Niña conditions. This index is the primary metric used by NOAA to monitor and forecast ENSO events.</p>
+                <p>The Niño 3.4 index tracks sea surface temperature anomalies in the 
+                equatorial Pacific Ocean. Values above +0.5°C indicate El Niño conditions, 
+                while values below -0.5°C indicate La Niña conditions.</p>
             </div>
+
+            <div class="monitoring-section">
+                <div class="control-group">
+                    <div class="image-viewer">
+                        <div class="image-controls btn-group">
+                            <button class="btn btn-oceanic">Niño 1+2</button>
+                            <button class="btn btn-oceanic">Niño 3</button>
+                            <button class="btn btn-oceanic">Niño 3.4</button>
+                            <button class="btn btn-oceanic">Niño 4</button>
+                        </div>
+
+                        <div class="image-display">
+                            <img src="figures/nino1+2.png" alt="Nino 1+2">
+                            <img src="figures/nino3.png" alt="Nino 3">
+                            <img src="figures/nino3.4.png" alt="Nino 3">
+                            <img src="figures/nino4.png" alt="Nino 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </section>
 
         <!-- SST Hovmöller Diagrams Section -->
@@ -69,7 +89,10 @@
             </div>
             
             <div class="text-description">
-                <p>Hovmöller diagrams show the evolution of sea surface temperature anomalies along the equator over time. These visualizations reveal the eastward and westward propagation of warm and cold water masses, helping to identify the development and decay of El Niño and La Niña events.</p>
+                <p>Hovmöller diagrams show the evolution of sea surface temperature anomalies 
+                along the equator over time. These visualizations reveal the eastward and 
+                westward propagation of warm and cold water masses, helping to identify the 
+                development and decay of El Niño and La Niña events.</p>
             </div>
             
             <div class="monitoring-section">
